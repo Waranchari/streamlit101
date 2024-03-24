@@ -13,7 +13,8 @@ def longin_hgf(private_repo=False, token=None):
     if private_repo:
         os.system(f"huggingface-cli login --token {token}")
         
-longin_hgf(private_repo=True, token="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")
+longin_hgf(private_repo=True, token=st.secrets["HUGGINGFACE_TOKEN"])
+# longin_hgf(private_repo=False)
 
 # Load model
 ## Check gpu availability with pytorch
