@@ -5,13 +5,6 @@ from torchvision import transforms
 import timm
 import torch
 
-def longin_hgf(private_repo=False, token=None):
-    if private_repo:
-        os.system(f"huggingface-cli login --token {token}")
-        
-longin_hgf(private_repo=True, token=st.secrets["HUGGINGFACE_TOKEN"])
-# longin_hgf(private_repo=False)
-
 # Load model
 ## Check gpu availability with pytorch
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
