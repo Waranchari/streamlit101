@@ -58,6 +58,6 @@ st.write(f"Displaying distribution of column: {selected_column}")
 plt.hist(data[selected_column])
 st.pyplot()
 
-VIDEO_URL = "https://www.youtube.com/watch?v=QQYgCxu988s"
+VIDEO_URL = "https://www.youtube.com/watch?v=0HeOd3sVNz4"
 st.subheader("Video Display")
 st.video(VIDEO_URL)
